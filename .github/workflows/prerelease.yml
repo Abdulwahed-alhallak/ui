@@ -3,11 +3,7 @@
 name: Release - Beta
 
 on:
-  pull_request:
-    types: [labeled]
-    branches:
-      - main
-
+  workflow_dispatch:
 permissions:
   id-token: write
   contents: read
