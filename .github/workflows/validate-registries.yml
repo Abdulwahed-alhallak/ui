@@ -1,17 +1,7 @@
 name: Validate Registries
 
 on:
-  pull_request:
-    paths:
-      - "apps/v4/public/r/registries.json"
-      - "apps/v4/registry/directory.json"
-  push:
-    branches:
-      - main
-    paths:
-      - "apps/v4/public/r/registries.json"
-      - "apps/v4/registry/directory.json"
-
+  workflow_dispatch:
 jobs:
   validate:
     runs-on: ubuntu-latest
